@@ -53,7 +53,7 @@ vector<int> solve(vector<Stand>& Stands, vector<Plane>& Planes)
 
 		}
 
-		plane.flight_datatime.minute += 49;
+		plane.flight_datatime.minute += 47;
 		if (plane.flight_AD == 'A') plane.flight_datatime.minute += bestm;
 		else plane.flight_datatime.minute -= Stands[poz - 1].Taxiing_Time;
 		cerr << plane.flight_datatime.minute << endl;
